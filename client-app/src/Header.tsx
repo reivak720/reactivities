@@ -40,7 +40,6 @@ const useStyles = makeStyles((theme: Theme) =>
       fontSize: "2rem",
       marginLeft: "5px",
     },
-
   })
 );
 
@@ -55,7 +54,6 @@ export default function Header() {
           <Button className={classes.logoContainer}>
             <GroupIcon className={classes.groupIcon} />
           </Button>
-
           <Tabs>
             <Tab label="Reactivities" className={classes.tab} />
           </Tabs>
