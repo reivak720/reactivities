@@ -1,14 +1,14 @@
 import React from "react";
 import { ThemeProvider } from "@material-ui/styles";
-import theme from "./Theme";
-import Header from "./Header";
-import ListTest from "./ListTest";
+import theme from "./ui/Theme";
+import Header from "./ui/Header";
+import CardTest from "./CardTest";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Header />
-      <ListTest />
+      <CardTest />
     </ThemeProvider>
   );
 }

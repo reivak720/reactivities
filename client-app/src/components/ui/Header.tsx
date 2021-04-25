@@ -11,15 +11,21 @@ import {
   useTheme,
 } from "@material-ui/core/styles";
 import GroupIcon from "@material-ui/icons/Group";
+import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     appBar: {
-      backgroundColor: "#fff",
+      maxHeight: "4em",
+      background: "linear-gradient(44deg, #230482 30%, #66b6c4 90%)",
+      boxShadow: "0 3px 5px 2px rgba(33, 203, 243, .3)",
     },
     toolbarMargin: {
       ...theme.mixins.toolbar,
       marginBottom: "2em",
+    },
+    toolbar: {
+      maxHeight: "3em",
     },
 
     logoContainer: {
@@ -29,16 +35,16 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     groupIcon: {
+      color: "#fff",
       height: 50,
       width: 50,
     },
     tab: {
       fontFamily: "Raleway",
       textTransform: "none",
-      fontWeight: 700,
-      color: theme.palette.common.black,
-      fontSize: "2rem",
-      marginLeft: "5px",
+      fontWeight: 500,
+      fontSize: "1.25rem",
+      color: "#fff",
     },
   })
 );
@@ -59,6 +65,7 @@ export default function Header() {
           </Tabs>
         </Toolbar>
       </AppBar>
+
       <div className={classes.toolbarMargin} />
     </>
   );

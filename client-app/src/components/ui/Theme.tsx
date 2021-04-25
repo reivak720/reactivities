@@ -3,7 +3,8 @@ import { createMuiTheme, ThemeOptions } from "@material-ui/core/styles";
 const blue = "#0B72B9";
 const orange = "#FFBA60";
 const grey = "#868686";
-const black = "#424242";
+const black = "#212121";
+const red = "#c62828";
 
 const theme = createMuiTheme({
   palette: {
@@ -14,7 +15,7 @@ const theme = createMuiTheme({
       main: blue,
     },
     secondary: {
-      main: orange,
+      main: red,
     },
   },
 
@@ -40,17 +41,20 @@ const theme = createMuiTheme({
     h6: {
       fontWeight: 500,
       fontFamily: "Raleway",
-      color: orange,
+      color: "#fff",
       lineHeight: 1,
     },
     subtitle1: {
-      fontSize: "1.25rem",
+      fontSize: "1.12rem",
       fontWeight: 300,
       color: grey,
     },
+    button:{
+      textTransform: "none",
+    },
     subtitle2: {
-      color: "white",
-      fontWeight: 300,
+      color: black,
+      fontWeight: 700,
       fontSize: "1.25rem",
     },
     body1: {
@@ -61,8 +65,9 @@ const theme = createMuiTheme({
     caption: {
       fontSize: "1rem",
       fontWeight: 300,
-      color: grey,
+      color: black,
     },
+
   },
 });
 
