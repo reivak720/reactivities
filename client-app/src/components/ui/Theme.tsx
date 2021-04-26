@@ -49,7 +49,7 @@ const theme = createMuiTheme({
       fontWeight: 300,
       color: grey,
     },
-    button:{
+    button: {
       textTransform: "none",
     },
     subtitle2: {
@@ -64,10 +64,10 @@ const theme = createMuiTheme({
     },
     caption: {
       fontSize: "1rem",
-      fontWeight: 300,
+      fontFamily: "Roboto",
+      fontWeight: 400,
       color: black,
     },
-
   },
 });
 

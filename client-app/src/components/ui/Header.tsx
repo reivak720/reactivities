@@ -54,19 +54,15 @@ export default function Header() {
   const theme = useTheme();
 
   return (
-    <>
-      <AppBar className={classes.appBar} elevation={0}>
-        <Toolbar>
-          <Button className={classes.logoContainer}>
-            <GroupIcon className={classes.groupIcon} />
-          </Button>
-          <Tabs>
-            <Tab label="Reactivities" className={classes.tab} />
-          </Tabs>
-        </Toolbar>
-      </AppBar>
-
-      <div className={classes.toolbarMargin} />
-    </>
+    <AppBar className={classes.appBar} elevation={1}>
+      <Toolbar>
+        <Button className={classes.logoContainer}>
+          <GroupIcon className={classes.groupIcon} />
+        </Button>
+        <Tabs>
+          <Tab label="Reactivities" className={classes.tab} />
+        </Tabs>
+      </Toolbar>
+    </AppBar>
   );
 }
